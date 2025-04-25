@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KirentApp - Kirala, Paylaş, Yaşat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f5f7fb; color: #333; }
+
+    header {
+      background: #fff;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #4F46E5;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #4F46E5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .banner {
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .banner img {
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 12px;
+      flex: 1;
+    }
+
+    .card-body h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .card-body p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card-footer {
+      padding: 12px;
+      text-align: right;
+    }
+
+    .btn {
+      background: #4F46E5;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #4F46E5;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>KirentApp</h1>
+  <nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="urunler.html">Ürünler</a>
+    <a href="urun-ekle.html">Ürün Ekle</a>
+    <a href="giriskayit-profil.html">Giriş / Kayıt</a>
+  </nav>
+</header>
+
+<!-- Banner -->
+<div class="banner">
+  <img src="images/kirala-banner.png" alt="Ürününü Kolayca Kirala" />
+</div>
+
+<!-- Ürün Kartları -->
+<div class="product-list">
+  <div class="card">
+    <img src="https://source.unsplash.com/featured/?bicycle" alt="Bisiklet">
+    <div class="card-body">
+      <h3>Dağ Bisikleti</h3>
+      <p>Günlük 90 TL - Kadıköy</p>
+    </div>
+    <div class="card-footer">
+      <a href="kirala.html" class="btn">Kirala</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://source.unsplash.com/featured/?camera" alt="Kamera">
+    <div class="card-body">
+      <h3>Canon Kamera</h3>
+      <p>Günlük 120 TL - Beşiktaş</p>
+    </div>
+    <div class="card-footer">
+      <a href="kirala.html" class="btn">Kirala</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://source.unsplash.com/featured/?tent" alt="Çadır">
+    <div class="card-body">
+      <h3>Kamp Çadırı</h3>
+      <p>Haftalık 250 TL - İzmir</p>
+    </div>
+    <div class="card-footer">
+      <a href="kirala.html" class="btn">Kirala</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2025 KirentApp. Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>
